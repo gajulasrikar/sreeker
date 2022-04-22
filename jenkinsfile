@@ -9,7 +9,7 @@ node {
        sh 'mvn package'
    }
 
-   stage ('archival') {
+   ////////stage ('archival') {
        // archiving artifacts
        archiveArtifacts artifacts: 'gameoflife-core/target/*.jar'
    }
